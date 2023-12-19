@@ -37,4 +37,25 @@ POST {{url_dev}}shop/refresh-token
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-x-rtoken-id: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5NzQzNDIsImV4cCI6MTcwMzU3OTE0Mn0.9Ic7Hex_YZ7nOmf3aoz3-tGSCg4S4hJcoEgt97x1wJc
+x-rtoken-id: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5Nzg5NjQsImV4cCI6MTcwMzE1MTc2NH0.8wtzLc_8mjmHmHmbpdTPVRUzKCQz19JjoUGdI_XwUr8
+
+### create new product
+POST {{url_dev}}product/create
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5ODAyNDQsImV4cCI6MTcwMzE1MzA0NH0.3Ftmz652LaMklxUzv4qONFu05prX7uEXbchsYoRhoPg
+
+{
+  "product_name": "Armchair Daikan",
+  "product_thumb": "product_thumb",
+  "product_description": "High-quality armchair",
+  "product_price": 1000,
+  "product_quantity": 1,
+  "product_type": "Furniture",
+  "product_attributes": {
+    "manufacturer": "Daikan",
+    "model": "XT021",
+    "from": "Japan"
+  }
+}

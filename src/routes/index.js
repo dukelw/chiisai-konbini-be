@@ -1,5 +1,6 @@
 const siteRouter = require("./site");
 const shopRouter = require("./shop");
+const productRouter = require("./product");
 const { apiKey, permission } = require("../auth/checkAuth");
 
 function route(app) {
@@ -8,6 +9,7 @@ function route(app) {
   // Check their permission
   app.use(permission("0000"));
   app.use("/shop", shopRouter);
+  app.use("/product", productRouter);
   app.use("/", siteRouter);
 }
 
