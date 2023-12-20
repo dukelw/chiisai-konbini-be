@@ -25,7 +25,7 @@ POST {{url_dev}}shop/logout
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5NzIzNzAsImV4cCI6MTcwMzE0NTE3MH0.L85x6pK7QwJu56GL2p33-etTC1JjXBtn68frLeiJJFA
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTE3NDIsImV4cCI6MTcwMzE2NDU0Mn0.GjsWPGvkkMDS7IbTqwEN_qJAlCx8ReI03PqLjFXp82E
 
 {
   "email": "shoplewis@gmail.com",
@@ -37,25 +37,82 @@ POST {{url_dev}}shop/refresh-token
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-x-rtoken-id: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5Nzg5NjQsImV4cCI6MTcwMzE1MTc2NH0.8wtzLc_8mjmHmHmbpdTPVRUzKCQz19JjoUGdI_XwUr8
+x-rtoken-id: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0MzUsImV4cCI6MTcwMzE2NjIzNX0.SoRLgUoEjCFS0BBWgMPjqIzvJgsvqRFFQzancSni0Ug
 
 ### create new product
 POST {{url_dev}}product/create
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTAyNjgsImV4cCI6MTcwMzE2MzA2OH0.TrmPgmuOQFIaRC53m5dlR8FiDuXJpQFz-nlY_Y_dAcM
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0OTQsImV4cCI6MTcwMzE2NjI5NH0.VMP90rHAXKGiHPJ9nBVz24XZdKNvNc8yKBEHfNX161U
 
 {
-  "product_name": "Fridge Panasonic",
+  "product_name": "Pride in Vietnam",
   "product_thumb": "product_thumb",
-  "product_description": "High-quality freezer",
-  "product_price": 100000,
-  "product_quantity": 3,
-  "product_type": "Furniture",
+  "product_description": "High-quality T-shirt",
+  "product_price": 100,
+  "product_quantity": 10,
+  "product_type": "Clothes",
   "product_attributes": {
-    "manufacturer": "Panasonic",
-    "model": "PH025",
-    "from": "Japan"
+    "brand": "Coolmate",
+    "size": "XL",
+    "material": "Cotton"
   }
+}
+
+### get all drafts for shops
+GET {{url_dev}}product/drafts/all
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+
+### get all publish for shops
+GET {{url_dev}}product/publish/all
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+
+### publish product for shop
+POST {{url_dev}}product/publish/6581978e8bfe348b71f338d1
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+
+### unpublish product for shop
+POST {{url_dev}}product/unpublish/65819e3b54ebae0e63c71ae7
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0OTQsImV4cCI6MTcwMzE2NjI5NH0.VMP90rHAXKGiHPJ9nBVz24XZdKNvNc8yKBEHfNX161U
+
+### get list search product 
+GET {{url_dev}}product/search/vietnam
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+
+### find all products
+GET {{url_dev}}product/
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+
+### find all products
+GET {{url_dev}}product/65819e9854ebae0e63c71b0a
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+
+### update product
+PATCH {{url_dev}}product/update/65819e9854ebae0e63c71b0a
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+
+{
+  "product_type": "Clothes",
+  "product_attributes": {
+    "brand": "Coolmate"
+  },
+  "product_name": "Take pride in making in Vietnam",
+  "product_thumb": "product_thumb",
+  "product_description": "High-quality T-shirt made in Vietnam"
 }
