@@ -44,17 +44,17 @@ POST {{url_dev}}product/create
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0OTQsImV4cCI6MTcwMzE2NjI5NH0.VMP90rHAXKGiHPJ9nBVz24XZdKNvNc8yKBEHfNX161U
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
 
 {
-  "product_name": "Pride in Vietnam",
+  "product_name": "Bocchi The Rock",
   "product_thumb": "product_thumb",
   "product_description": "High-quality T-shirt",
-  "product_price": 100,
-  "product_quantity": 10,
+  "product_price": 250,
+  "product_quantity": 20,
   "product_type": "Clothes",
   "product_attributes": {
-    "brand": "Coolmate",
+    "brand": "Bocchi",
     "size": "XL",
     "material": "Cotton"
   }
@@ -72,14 +72,14 @@ GET {{url_dev}}product/publish/all
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
 
 ### publish product for shop
-POST {{url_dev}}product/publish/6581978e8bfe348b71f338d1
+POST {{url_dev}}product/publish/65816b77e399f5eebb466262
 Content-Type: application/json
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
 
 ### unpublish product for shop
 POST {{url_dev}}product/unpublish/65819e3b54ebae0e63c71ae7
@@ -96,7 +96,7 @@ x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807
 GET {{url_dev}}product/
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 
-### find all products
+### find product
 GET {{url_dev}}product/65819e9854ebae0e63c71b0a
 x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
 
@@ -115,4 +115,98 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
   "product_name": "Take pride in making in Vietnam",
   "product_thumb": "product_thumb",
   "product_description": "High-quality T-shirt made in Vietnam"
+}
+
+### create new discount
+POST {{url_dev}}discount/create
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+
+{
+  "name": "Siêu sale 05/05",
+  "description": "Săn sale ngay vào 05/05 2024",
+  "value": 10,
+  "type": "percentage",
+  "max_value": 700000,
+  "code": "LEWISSALE0505",
+  "start_day": "05/05/2023",
+  "end_day": "04/11/2024",
+  "max_uses": 10,
+  "uses_count": 0,
+  "max_uses_per_user": 1,
+  "min_order_value": 900000,
+  "is_active": true,
+  "applies_to": "all"
+}
+
+### update discount
+PATCH {{url_dev}}discount/update/LEWISTETVUIVE
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+
+{
+  "discount_name": "Ưu đãi ngày Tết siêu khủng",
+  "discount_description": "Tết vui mua thích",
+  "discount_code": "LEWISTETVUIVE",
+  "discount_start_date": "12/20/2023",
+  "discount_end_date": "02/02/2024",
+  "discount_max_uses": 100,
+  "discount_uses_count": 0,
+  "discount_max_uses_per_user": 1,
+  "discount_min_order_value": 300000,
+  "discount_applies_to": "all",
+  "discount_product_ids": ["65851951708ddb5cc9a50f92", "65816b77e399f5eebb466262"]
+}
+
+### get all products which a code apply for
+GET {{url_dev}}discount/codes/applyfor?code=LEWISSALE0505&shop_id=657fbb2f6371be5fcfc1e57f&user_id=""&limit=50&page=1
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+
+### get all codes of a shop
+GET {{url_dev}}discount/codes/all?limit=60&page=1
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+
+### get discount amount of products
+POST {{url_dev}}discount/amount
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+
+{
+  "code": "LEWISSALE0505",
+  "user_id": 2,
+  "shop_id": "657fbb2f6371be5fcfc1e57f",
+  "products": [
+    {
+      "product_id": "65851951708ddb5cc9a50f92",
+      "quantity": 5,
+      "price": 250000
+    }
+  ]
+}
+
+
+### delete discount code of a shop
+DELETE {{url_dev}}discount/delete/LEWISSALE0101
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+
+### cancel discount code (have not tested yet)
+POST {{url_dev}}discount/cancel/LEWISTETVUIVE
+Content-Type: application/json
+x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-client-id: 657fbb2f6371be5fcfc1e57f
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+
+{
+  "code": "LEWISTETVUIVE",
+  "user_id": ""
 }
