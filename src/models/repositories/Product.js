@@ -5,7 +5,11 @@ const {
   electronic: ElectronicModel,
   furniture: FurnitureModel,
 } = require("../../models/Product");
-const { getSelectData, unGetSelectData } = require("../../utils/index");
+const {
+  getSelectData,
+  unGetSelectData,
+  convertToObjectIDMongo,
+} = require("../../utils/index");
 
 const publishProductByShop = async ({ product_shop, product_id }) => {
   const foundShop = await ProductModel.findOne({
@@ -94,6 +98,27 @@ const updateProductByID = async ({
   });
 };
 
+const getProductByID = async (product_id) => {
+  return await ProductModel.findOne({
+    _id: convertToObjectIDMongo(product_id),
+  }).lean();
+};
+
+const checkProductByServer = async (products) => {
+  return await Promise.all(
+    products.map(async (product) => {
+      const foundProduct = await getProductByID(product.product_id);
+      if (foundProduct) {
+        return {
+          price: foundProduct.product_price,
+          quantity: product.quantity,
+          product_id: product.product_id,
+        };
+      }
+    })
+  );
+};
+
 module.exports = {
   findAllDraftsForShop,
   publishProductByShop,
@@ -103,4 +128,6 @@ module.exports = {
   findAllProducts,
   findProduct,
   updateProductByID,
+  getProductByID,
+  checkProductByServer,
 };
