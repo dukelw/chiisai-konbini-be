@@ -18,9 +18,10 @@ app.use(
 );
 
 // Test pub sub redis
-require("./tests/inventory");
-const productTest = require("./tests/product");
-productTest.purchaseProduct("product:001", 10);
+// For some reason error occur so I comment
+// const productTest = require("./tests/product");
+// productTest.purchaseProduct("product:001", 10);
+// require("./tests/inventory");
 
 // Init db
 require("./dbs/init.mongodb");

@@ -6,6 +6,7 @@ const cartRouter = require("./cart");
 const checkoutRouter = require("./checkout");
 const inventoryRouter = require("./inventory");
 const commentRouter = require("./comment");
+const notificationRouter = require("./notification");
 const { apiKey, permission } = require("../auth/checkAuth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -23,6 +24,7 @@ function route(app) {
   app.use("/checkout", checkoutRouter);
   app.use("/inventory", inventoryRouter);
   app.use("/comment", commentRouter);
+  app.use("/notification", notificationRouter);
   app.use("/", siteRouter);
 }
 

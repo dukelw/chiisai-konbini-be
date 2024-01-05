@@ -5,6 +5,7 @@ const {
   db: { host, name, port },
 } = require("../configs/config.mongodb");
 const connectString = `mongodb://${host}:${port}/${name}`;
+console.log(connectString);
 
 class Database {
   constructor() {
@@ -19,7 +20,7 @@ class Database {
     }
     mongoose
       .connect(connectString)
-      .then((_) => console.log("Connect DB successfully!"))
+      .then((_) => console.log(`Connect DB ${connectString} successfully!`))
       .catch((err) => console.log("Connect failed!"));
   }
 

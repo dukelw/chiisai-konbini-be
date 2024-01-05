@@ -43,6 +43,7 @@ class RedisPubSubService {
         callback(channel, message);
       }
     });
+    console.log("Pub sub error");
   }
 }
 

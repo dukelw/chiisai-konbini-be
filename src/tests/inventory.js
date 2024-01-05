@@ -7,7 +7,7 @@ class InventoryServiceTest {
     });
   }
 
-  static updateInventory(product_id, quantity) {
+  static updateInventory({ product_id, quantity }) {
     console.log(`Update inventory ${product_id} with quantity ${quantity}`);
   }
 }

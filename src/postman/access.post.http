@@ -2,18 +2,18 @@
 ### signup
 POST {{url_dev}}shop/signup
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 {
   "name": "Shop Duke",
-  "email": "shopduke@gmail.com",
+  "email": "shoplewis@gmail.com",
   "password": "123456"
 }
 
 ### signin
 POST {{url_dev}}shop/signin
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 {
   "email": "shoplewis@gmail.com",
@@ -23,9 +23,9 @@ x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807
 ### logout
 POST {{url_dev}}shop/logout
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDM5MjUzNDgsImV4cCI6MTcwNDA5ODE0OH0.pVGFXtQR-P9CoC2cdA8yHUkqw8rkvJ-XbNuSUjRGQQ8
+x-api-key: ff451740398ef5bbf3a47d36847463cc6e03ee929572137299469206c525f105036831a047be6c0f156b1dda56a73460854fb03c2d93addf9442fd4e73ce9cbd
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2YzI5OGIwMjNjZGUxOTJjOGNjMGYiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzNzkxMzMsImV4cCI6MTcwNDU1MTkzM30.6dpv7fvijLK7aX0TN-uSdOmF0yWy8FMM09Foj9DQ8OA
 
 {
   "email": "shoplewis@gmail.com",
@@ -35,26 +35,26 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
 ### refresh-token
 POST {{url_dev}}shop/refresh-token
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
 x-rtoken-id: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0MzUsImV4cCI6MTcwMzE2NjIzNX0.SoRLgUoEjCFS0BBWgMPjqIzvJgsvqRFFQzancSni0Ug
 
 ### create new product
 POST {{url_dev}}product/create
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 658583ae7192f57cb0d14229
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTg1ODNhZTcxOTJmNTdjYjBkMTQyMjkiLCJlbWFpbCI6InNob3BkdWtlQGdtYWlsLmNvbSIsImlhdCI6MTcwMzI0ODgxNCwiZXhwIjoxNzAzNDIxNjE0fQ.jbAGfowUtWFo7FJ6DRkbShxSOLp5unZlOTqdFa5Vxw4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
-  "product_name": "Dandadan",
+  "product_name": "Jojo",
   "product_thumb": "product_thumb",
   "product_description": "High-quality T-shirt",
   "product_price": 200000,
   "product_quantity": 20,
   "product_type": "Clothes",
   "product_attributes": {
-    "brand": "Dandadan",
+    "brand": "Jojo",
     "size": "XL",
     "material": "Cotton"
   }
@@ -63,48 +63,48 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTg1ODNhZTcx
 ### get all drafts for shops
 GET {{url_dev}}product/drafts/all
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDM5MjUyMDksImV4cCI6MTcwNDA5ODAwOX0.GbLCh8wkGS8hkeDxNVvhOy68ho2NGLe3EZU86lEqn4A
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### get all publish for shops
 GET {{url_dev}}product/publish/all
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQyNzM1MTQsImV4cCI6MTcwNDQ0NjMxNH0.j182g-6mLErH1cdQ1JSfdfYufykxaQZpts1uR2j9hOg
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### publish product for shop
-POST {{url_dev}}product/publish/65816b77e399f5eebb466262
+POST {{url_dev}}product/publish/6596cce99db8538445956f0d
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### unpublish product for shop
 POST {{url_dev}}product/unpublish/65819e3b54ebae0e63c71ae7
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDI5OTM0OTQsImV4cCI6MTcwMzE2NjI5NH0.VMP90rHAXKGiHPJ9nBVz24XZdKNvNc8yKBEHfNX161U
 
 ### get list search product 
-GET {{url_dev}}product/search/vietnam
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+GET {{url_dev}}product/search/komi
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 ### find all products
 GET {{url_dev}}product/
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 ### find product
 GET {{url_dev}}product/65819e9854ebae0e63c71b0a
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 ### update product
 PATCH {{url_dev}}product/update/65819e9854ebae0e63c71b0a
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMwODA0NDUsImV4cCI6MTcwMzI1MzI0NX0.9kL7PUTDaccstytDjMtblBRXPSckwzz6BvWF0wmiXhc
 
 {
@@ -120,17 +120,17 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
 ### create new discount
 POST {{url_dev}}discount/create
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 658583ae7192f57cb0d14229
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTg1ODNhZTcxOTJmNTdjYjBkMTQyMjkiLCJlbWFpbCI6InNob3BkdWtlQGdtYWlsLmNvbSIsImlhdCI6MTcwMzI0ODgxNCwiZXhwIjoxNzAzNDIxNjE0fQ.jbAGfowUtWFo7FJ6DRkbShxSOLp5unZlOTqdFa5Vxw4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
-  "name": "Siêu sale áo Dandadan",
-  "description": "Săn sale ngay vào 05/05 2024",
-  "value": 20,
-  "type": "percentage",
+  "name": "Siêu sale áo Jujutsu Kaisen",
+  "description": "Săn sale ngay vào Jujutsu Kaisen 2024",
+  "value": 20000,
+  "type": "fixed_amount",
   "max_value": 1200000,
-  "code": "LEWISSALEDANDADAN",
+  "code": "LEWISSALEJJSKS",
   "start_day": "01/01/2024",
   "end_day": "11/11/2024",
   "max_uses": 10,
@@ -139,15 +139,15 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTg1ODNhZTcx
   "min_order_value": 400000,
   "is_active": true,
   "applies_to": "specific",
-  "discount_product_ids": ["658583d47192f57cb0d1422e"]
+  "product_ids": ["6596cce99db8538445956f0d"]
 }
 
 ### update discount
 PATCH {{url_dev}}discount/update/LEWISTETVUIVE
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
   "discount_name": "Ưu đãi ngày Tết siêu khủng",
@@ -160,34 +160,34 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
   "discount_max_uses_per_user": 1,
   "discount_min_order_value": 300000,
   "discount_applies_to": "all",
-  "discount_product_ids": ["65851951708ddb5cc9a50f92", "65816b77e399f5eebb466262"]
+  "discount_product_ids": ["65851951708ddb5cc9a50f92", "65816b77e399f5eebb466262"],
 }
 
 ### get all products which a code apply for
-GET {{url_dev}}discount/codes/applyfor?code=LEWISSALE0505&shop_id=657fbb2f6371be5fcfc1e57f&user_id=""&limit=50&page=1
+GET {{url_dev}}discount/codes/applyfor?code=LEWISSALEANIME&shop_id=6596cc409db8538445956ee9&user_id=""&limit=50&page=1
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 ### get all codes of a shop
 GET {{url_dev}}discount/codes/all?limit=60&page=1
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### get discount amount of products
 POST {{url_dev}}discount/amount
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
 
 {
-  "code": "LEWISSALE0505",
+  "code": "LEWISSALEANIME",
   "user_id": 2,
-  "shop_id": "657fbb2f6371be5fcfc1e57f",
+  "shop_id": "6596cc409db8538445956ee9",
   "products": [
     {
-      "product_id": "65851951708ddb5cc9a50f92",
-      "quantity": 5,
-      "price": 250000
+      "product_id": "6596ccb09db8538445956f01",
+      "quantity": 20,
+      "price": 200000
     }
   ]
 }
@@ -196,16 +196,16 @@ x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807
 ### delete discount code of a shop
 DELETE {{url_dev}}discount/delete/LEWISSALE0101
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### cancel discount code (have not tested yet)
 POST {{url_dev}}discount/cancel/LEWISTETVUIVE
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
   "code": "LEWISTETVUIVE",
@@ -215,17 +215,17 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
 ### add to cart
 POST {{url_dev}}cart
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
   "user_id": 1001,
   "product": {
-    "product_id": "658583d47192f57cb0d1422e",
-    "shop_id": "658583ae7192f57cb0d14229",
+    "product_id": "6596cce99db8538445956f0d",
+    "shop_id": "6596cc409db8538445956ee9",
     "quantity": 20,
-    "name": "Dandadan",
+    "name": "Jujutsu Kaisen",
     "price": 200000
   }
 }
@@ -233,34 +233,34 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
 ### delete product in cart
 DELETE {{url_dev}}cart
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
   "user_id": 1001,
-  "product_id": "658539e21175f9f123be1c58"
+  "product_id": "6596cca19db8538445956ef5"
 }
 
 ### update increase (quantity: 2, old_quantity: 1)/reduce(quantity: 1, old_quantity: 2) or change by enter exactly old_quantity and quantity product in cart
 POST {{url_dev}}cart/update
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
   "user_id": 1001,
   "shop_order_ids": [
     {
-      "shop_id": "657fbb2f6371be5fcfc1e57f",
+      "shop_id": "6596cc409db8538445956ee9",
       "item_products": [
         {
-          "quantity": 20,
-          "price": 260000,
-          "shop_id":"657fbb2f6371be5fcfc1e57f",
-          "old_quantity": 51,
-          "product_id": "65854df8c27dd537fe0e1479"
+          "quantity": 9,
+          "price": 200000,
+          "shop_id":"6596cc409db8538445956ee9",
+          "old_quantity": 20,
+          "product_id": "6596ccb09db8538445956f01"
         }
       ],
       "version": 2000
@@ -271,57 +271,57 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYz
 ### get cart of an user
 GET {{url_dev}}cart?user_id=1001
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 ### check out review
 POST {{url_dev}}checkout/review
 Content-Type: application/json
-x-api-key: 1060ac7ac7b1691ca89c530315cd10a31ce7ecdee0ed86b90ab08c9d8d04f5c76f807f8e1f56019f6bb16227d3680743c9aa1a534ffec9b8a661aead828fddd4
-x-client-id: 657fbb2f6371be5fcfc1e57f
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTdmYmIyZjYzNzFiZTVmY2ZjMWU1N2YiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDMyMTY5NTMsImV4cCI6MTcwMzM4OTc1M30.BhxFCdTCqrfnbZcGFhy63idOnYxtYXj0fAII43nNHBM
+x-api-key: ab827c30bfdf51c92eb674b3e8fcfadff8a69432245080e4a9b6238d8a67d39efc114d3cb7e3937aa2a925989c4e1519eeee7d2e51e198558f671605dd93d258
+x-client-id: 6596cc409db8538445956ee9
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTk2Y2M0MDlkYjg1Mzg0NDU5NTZlZTkiLCJlbWFpbCI6InNob3BsZXdpc0BnbWFpbC5jb20iLCJpYXQiOjE3MDQzODE1MTAsImV4cCI6MTcwNDU1NDMxMH0.DMFl_4s5AJP4NdjU8iJWRLqiqE7Ov0Hr2rSZjzYZe60
 
 {
-  "cart_id": "65854bb5b83695c40b31c402",
+  "cart_id": "6596d0c14956bb52b84cc47f",
   "user_id": 1001,
   "shop_order_ids": [
     {
-      "shop_id": "657fbb2f6371be5fcfc1e57f",
+      "shop_id": "6596cc409db8538445956ee9",
       "shop_discounts": [
         {
-          "shop_id": "657fbb2f6371be5fcfc1e57f",
-          "discount_id": "65851c103ea901fc6d0c76ff",
-          "code": "LEWISSALE0505"
+          "shop_id": "6596cc409db8538445956ee9",
+          "discount_id": "6596d0219db8538445956f9b",
+          "code": "LEWISSALEANIME"
         }
       ],
       "item_products": [
         {
           "price": 200000,
-          "quantity": 20,
-          "product_id": "65854df8c27dd537fe0e1479"
+          "quantity": 9,
+          "product_id": "6596ccb09db8538445956f01"
         },
         {
-          "price": 250000,
-          "quantity": 90,
-          "product_id": "658539e21175f9f123be1c58"
+          "price": 200000,
+          "quantity": 40,
+          "product_id": "6596cca19db8538445956ef5"
         }
       ]
     },
     {
-      "shop_id": "658583ae7192f57cb0d14229",
+      "shop_id": "6596cc409db8538445956ee9",
       "shop_discounts": [
         {
-          "shop_id": "658583ae7192f57cb0d14229",
-          "discount_id": "658588287192f57cb0d1424f",
-          "code": "LEWISSALEDANDADAN"
+          "shop_id": "6596cc409db8538445956ee9",
+          "discount_id": "6596d2639db8538445956fed",
+          "code": "LEWISSALEJJSKS"
         }
       ],
       "item_products": [
         {
           "price": 200000,
           "quantity": 20,
-          "product_id": "658583d47192f57cb0d1422e"
+          "product_id": "6596cce99db8538445956f0d"
         }
       ]
     }
