@@ -29,9 +29,7 @@ const updateUserCartQuantity = async ({ user_id, product }) => {
 };
 
 const checkProductInCart = ({ card_products, product_id }) => {
-  console.log(card_products);
   return card_products.some((cart_product) => {
-    console.log(card_products.product_id, product_id);
     return cart_product.product_id === product_id;
   });
 };
