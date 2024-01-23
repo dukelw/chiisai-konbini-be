@@ -7,6 +7,7 @@ const checkoutRouter = require("./checkout");
 const inventoryRouter = require("./inventory");
 const commentRouter = require("./comment");
 const notificationRouter = require("./notification");
+const uploadRouter = require("./upload");
 const { apiKey, permission } = require("../auth/checkAuth");
 const { pushToLogDiscord } = require("../middlewares/index");
 
@@ -25,6 +26,7 @@ function route(app) {
   app.use("/inventory", inventoryRouter);
   app.use("/comment", commentRouter);
   app.use("/notification", notificationRouter);
+  app.use("/upload", uploadRouter);
   app.use("/", siteRouter);
 }
 
